@@ -1,9 +1,37 @@
-node_modules
-.DS_Store
-.cache/
-public
+# Node modules
+node_modules/
 
-# Local Netlify folder
-.netlify
-.env.development
+# Gatsby files
+.cache/
+
+# Ignore everything in the public folder
+public/*
+
+# Don't ignore the admin folder (Netlify CMS configuration)
+!public/admin/
+
+# Netlify CMS related files
+/admin/config.yml
+
+# Environment variables
 .env
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Temporary files
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+
+# Yarn
+.yarn/
+
+# Netlify CMS media files (optional)
+static/images/
